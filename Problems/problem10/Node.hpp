@@ -1,6 +1,6 @@
 #ifndef NODE_HPP
 #define NODE_HPP
-
+#include <stdexcept>
 class Node
 {
 private:
