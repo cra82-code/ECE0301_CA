@@ -2,6 +2,7 @@
 #define RESISTOR_HPP
 
 #include "Component.hpp"
+#include <stdexcept>
 
 class Resistor : public Component
 {
