@@ -3,5 +3,5 @@
 double CurrentSource::get_current() const
 {
   // TODO
-  return get_current();
+  return Component::get_value();
 }

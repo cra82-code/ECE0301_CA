@@ -4,7 +4,7 @@ void Resistor::set_value(double r)
 {
   if (r < 0)
   {
-    std::invalid_argument("negative resistance");
+    throw std::invalid_argument("negative resistance");
   }
   else
   {
@@ -16,10 +16,10 @@ double Resistor::get_current() const
 {
   if (Resistor::get_value() == 0)
   {
-    std::logic_error("Can't divide by zero");
+    throw std::logic_error("Can't divide by zero");
   }
   else
   {
-    return Resistor::get_voltage() / Resistor::get_value();
+    return get_voltage() / get_value();
   }
 }
